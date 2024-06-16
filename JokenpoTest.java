@@ -79,4 +79,18 @@ class JokenpoTest {
 		assertEquals(1, resultado);
 	}
 	
+	// Aumentando score de mutação
+	
+	@Test
+	void test_P1Zero_P2Um() {
+		resultado = jokenpo.jogar(0, 1);
+		assertEquals(1, resultado);
+	}
+
+	@Test
+	void test_P1Um_P2Zero() {
+		resultado = jokenpo.jogar(1, 0);
+		assertEquals(-1, resultado);
+	}
+	
 }
